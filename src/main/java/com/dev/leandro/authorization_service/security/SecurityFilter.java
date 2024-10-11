@@ -1,4 +1,4 @@
-package com.dev.leandro.tech_interview_two.security;
+package com.dev.leandro.authorization_service.security;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -10,9 +10,9 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.dev.leandro.tech_interview_two.entity.User;
-import com.dev.leandro.tech_interview_two.repository.UserRepository;
-import com.dev.leandro.tech_interview_two.service.TokenService;
+import com.dev.leandro.authorization_service.entity.User;
+import com.dev.leandro.authorization_service.repository.UserRepository;
+import com.dev.leandro.authorization_service.service.TokenService;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

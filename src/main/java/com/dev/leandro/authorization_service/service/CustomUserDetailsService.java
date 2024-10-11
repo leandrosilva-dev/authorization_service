@@ -1,4 +1,4 @@
-package com.dev.leandro.tech_interview_two.service;
+package com.dev.leandro.authorization_service.service;
 
 import java.util.ArrayList;
 
@@ -8,8 +8,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import com.dev.leandro.tech_interview_two.entity.User;
-import com.dev.leandro.tech_interview_two.repository.UserRepository;
+import com.dev.leandro.authorization_service.entity.User;
+import com.dev.leandro.authorization_service.repository.UserRepository;
 
 @Component
 public class CustomUserDetailsService implements UserDetailsService{

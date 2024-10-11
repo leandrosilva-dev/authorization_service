@@ -1,4 +1,4 @@
-package com.dev.leandro.tech_interview_two.security;
+package com.dev.leandro.authorization_service.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -14,7 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.dev.leandro.tech_interview_two.service.CustomUserDetailsService;
+import com.dev.leandro.authorization_service.service.CustomUserDetailsService;
 
 @Configuration
 @EnableWebSecurity
@@ -28,7 +28,6 @@ public class SecurityConfig {
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
-        System.out.println("Security...");
         http
             .csrf(csrf -> csrf.disable())
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
