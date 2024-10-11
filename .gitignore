@@ -1,1 +1,5 @@
 build/
+data/
+terraform/*
+!terraform/main.tf
+!terraform/ebs_volume.tf

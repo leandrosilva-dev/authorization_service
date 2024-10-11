@@ -1,10 +1,10 @@
-package com.dev.leandro.tech_interview_two;
+package com.dev.leandro.authorization_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TechInterviewTwoApplicationTests {
+class AuthorizationServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

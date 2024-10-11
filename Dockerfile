@@ -11,8 +11,8 @@ FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
-COPY --from=build /app/build/libs/*.jar tech_interview_two.jar
+COPY --from=build /app/build/libs/*.jar authorization_service.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "tech_interview_two.jar"]
+ENTRYPOINT ["java", "-jar", "authorization_service.jar"]
