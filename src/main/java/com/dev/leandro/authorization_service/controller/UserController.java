@@ -1,4 +1,4 @@
-package com.dev.leandro.tech_interview_two.controller;
+package com.dev.leandro.authorization_service.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;

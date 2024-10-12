@@ -1,4 +1,6 @@
-package com.dev.leandro.tech_interview_two.entity;
+package com.dev.leandro.authorization_service.entity;
+
+import java.util.UUID;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +21,7 @@ import lombok.Setter;
 public class User {
     @Id
     @GeneratedValue( strategy = GenerationType.UUID)
-    private String id;
+    private UUID id;
     private String name;
     private String email;
     private String password;

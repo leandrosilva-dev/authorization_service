@@ -2,11 +2,9 @@ name: 'Terraform provision AWS infrastructure'
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" , "quality" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" , "quality" ]
 
 jobs:
   terraform:
@@ -41,6 +39,5 @@ jobs:
         working-directory: ./terraform
   
       - name: Terraform apply
-        if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
         run: terraform apply -auto-approve -input=false
         working-directory: ./terraform

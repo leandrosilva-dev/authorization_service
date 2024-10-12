@@ -1,1 +1,7 @@
 build/
+data/
+.gradle/
+.vscode/
+terraform/*
+!terraform/main.tf
+!terraform/ebs_volume.tf
